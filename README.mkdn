@@ -46,15 +46,15 @@ _I left the classes to remain consistent with the original `GGS.css` file but th
 
 From the GGS.scss file
 
-`$line: 24` - Line height
-`$column: 100% / 18` - Column width
-`$font-size: 16` - Base font size
-`$em: $font-size * 1` EM conversion
+- `$line: 24` - Line height
+- `$column: 100% / 18` - Column width
+- `$font-size: 16` - Base font size
+- `$em: $font-size * 1` EM conversion
 
 I've added:
 
-`$layout: 8 !default` - This variable is overridden in each layout.
-`$page: 100% !default` - You probably wouldn't change this and it
+- `$layout: 8 !default` - This variable is overridden in each layout.
+- `$page: 100% !default` - You probably wouldn't change this and it
 probably didn't need to be a variable.
 
 ###Mixins
