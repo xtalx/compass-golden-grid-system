@@ -72,5 +72,5 @@ Thanks to [willhw's](http://github.com/willhw) [compass-less-plugin](http://gith
 
 ##Notes
 
-I'm no sass/compass expert. This is my first Compass extension and Ruby Gem and I'm sure there art things that could
+I'm no sass/compass expert. This is my first Compass extension and Ruby Gem and I'm sure there are things that could
 be improved. Feel free to make it better. Cheers.
