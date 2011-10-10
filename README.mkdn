@@ -36,11 +36,9 @@ There are partials for each grid size:
 - `_tablet.scss` 8 column grid
 - `_large.scss` 16 column grid
 
-`_type.scss` contains the type presets.
-
-_I left the classes to remain consistent with the original `GGS.css` file but they aren't necessary._
-
-`_global.scss` is for styles shared by all layouts.
+- `_type.scss` contains the type presets.(_I left the classes to remain consistent with the original `GGS.css` file but they aren't necessary._
+)
+- `_global.scss` is for styles shared by all layouts.
 
 ##Configuration Variables
 
