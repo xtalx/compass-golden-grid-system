@@ -1,0 +1,57 @@
+$layout: 4
+
+
+/*
+ **
+ **  Four-column grid active
+ **  ----------------------------------------
+ **  Margin   | #  1   2   3   4   |   Margin
+ **  5.55555% | %  25  50  75  100 | 5.55555%
+ **/
+
+
+header,
+#twoway
+  +outer(1)
+
+h1, h2
+  margin: 24 / 26 * 1em 0 36 / 26 * 1em
+
+h2
+  font-weight: normal
+
+h3
+  margin: #{24 / $em}em 0 #{24 / $em}em
+
+.wrapper
+  +wrapper
+
+
+/*
+ **
+ **  Fixes for IE6-8
+ **  http://jonikorpi.com/leaving-old-IE-behind/
+ **/
+
+
+.ie body
+  width: #{640 / $em}em
+  margin: 0 auto
+  font-size: #{($font-size + 1) / $em}em
+
+.ie h1
+  +huge
+  margin: 48 / 42 * 1em 0 24 / 42 * 1em
+
+
+/* @media screen and (min-width: 640px)
+@media screen and (min-width: 40em)
+
+
+  body
+    /* Zoom baseline grid to 17/16 = 1.0625
+    font-size: #{($font-size + 1) / $em}em
+
+  h1
+    +huge
+    margin: 48 / 42 * 1em 0 24 / 42 * 1em

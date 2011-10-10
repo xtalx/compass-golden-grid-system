@@ -1,0 +1,69 @@
+//  Important Numbers
+$line: 24
+$column: 100% / 18
+$font-size: 16
+$em: $font-size * 1
+
+// Variables that enable setting column widths, floats and outer margins
+$layout: 4 !default
+$page: 100% !default
+
+
+
+=column($columns, $side:"")
+  width: $page / $layout * $columns
+  @if $side != ""
+    float: $side
+
+=outer($columns)
+  // margin: 0 5.555555555555555%
+  margin: 0 $columns * $column
+
+=wrapper
+  padding: 0 0.75em
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  -o-box-sizing: border-box
+  box-sizing: border-box
+
+
+//
+// Zoomable baseline grid
+// type size presets
+//
+
+
+=body
+  // 16px / 24px //
+  font-size: $font-size / 16 * 1em
+  line-height: #{$line / $em}em
+
+=small
+  // 13px / 18px //
+  font-size: #{$font-size * 0.813 / $em}em
+  line-height: $line * 0.75 / ($font-size * 0.813) * 1em
+
+=normal
+  // 16px / 24px //
+  font-size: #{$font-size / $em}em
+  line-height: #{$line / $em}em
+
+=large
+  // 16px / 24px //
+  font-size: #{26 / $em}em
+  line-height: $line * 1.5 / 26 * 1em
+
+=huge
+  // 42px / 48px //
+  font-size: #{42 / $em}em
+  line-height: $line * 2 / 42 * 1em
+
+=massive
+  // 68px / 72px //
+  font-size: #{68 / $em}em
+  line-height: $line * 3 / 68 * 1em
+
+=gigantic
+  // 110px / 120px //
+  font-size: #{110 / $em}em
+  line-height: $line * 5 / 110 * 1em

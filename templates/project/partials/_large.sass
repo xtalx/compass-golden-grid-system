@@ -1,0 +1,39 @@
+$layout: 16
+
+
+/*
+ **
+ **  Sixteen-column grid active
+ **  ----------------------------------------------------------------------------------------------------------------------
+ **  Margin   | #  1     2     3     4     5     6     7     8     9     10    11    12    13    14    15    16  |   Margin
+ **  5.55555% | %  6.25  12.5  18.75 25.0  31.25 37.5  43.75 50.0  56.25 62.5  68.75 75.0  81.25 87.5  93.75 100 | 5.55555%
+ **/
+
+
+/* @media screen and (min-width: 1872px) */
+@media screen and (min-width: 117em)
+
+
+  header, #twoway
+    +outer(1)
+
+  header .wrapper
+    +column(6)
+    margin-left: 25%
+
+  #twoway .wrapper
+    +column(4, left)
+
+  #twoway .wrapper:first-child
+    margin-left: 25%
+
+
+/* @media screen and (min-width: 2080px) */
+@media screen and (min-width: 130em)
+
+
+  body
+    /* Zoom baseline grid to 18/16 = 1.125 */
+    font-size: #{($font-size + 2) / $em}em
+    max-width: 2560 / $em em
+
