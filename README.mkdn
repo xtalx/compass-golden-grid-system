@@ -1,15 +1,15 @@
-#Golden Grid System Compass Plugin
+# Golden Grid System Compass Plugin
 
 This plugin adds the Golden Grid System to [Compass](http://compass-style.org).
 
 [Golden Grid System](http://goldengridsystem.com) is a fluid grid created by [Joni Korpi](http://jonikorpi.com) with
 [four features](http://goldengridsystem.com/#features): columns, gutters, a baseline and a script.
 
-##Install the gem
+## Install the gem
 
 `gem install compass-golden-grid-system`
 
-##Create a Compass project using Golden Grid System
+## Create a Compass project using Golden Grid System
 
 `compass create -r ggs my_project --using ggs`
 
@@ -19,16 +19,16 @@ and use scss syntax.
 See the Compass [Install](http://compass-style.org/install) page for
 options.
 
-###Sans Compass
+### Sans Compass
 
 Download the source and use it in your sass project.
 
-##Usage
+## Usage
 
 In the `sass` directory you will find the bootstrap file `GGS.scss`
 which imports all of the component files.
 
-###Partials
+### Partials
 
 There are partials for each grid size:
 
@@ -40,7 +40,7 @@ There are partials for each grid size:
 )
 - `_global.scss` is for styles shared by all layouts.
 
-##Configuration Variables
+## Configuration Variables
 
 From the GGS.scss file
 
@@ -55,7 +55,7 @@ I've added:
 - `$page: 100% !default` - You probably wouldn't change this and it
 probably didn't need to be a variable.
 
-###Mixins
+### Mixins
 
 - `column($columns, $side)` - Considers the `$layout` and sets the width of an element to span the number of given columns, and optionally set a float direction.
 - `outer($columns)` - Sets the outer margin width.
@@ -63,14 +63,14 @@ probably didn't need to be a variable.
   border-box`.
 - There are mixins for each of the type presets as well.
 
-##Credit
+## Credit
 
 Thanks to Joni Korpi for creating rad minimal tools. I started with the [GGS.scss](http://github.com/jonikorpi/Golden-Grid-System/blob/master/GGS.scss)
 file which was contributed by [mikker](http://github.com/mikker)
 
 Thanks to [willhw's](http://github.com/willhw) [compass-less-plugin](http://github.com/willhw/compass-less-plugin) which I used as a reference point.
 
-##Notes
+## Notes
 
 I'm no sass/compass expert. This is my first Compass extension and Ruby Gem and I'm sure there are things that could
 be improved. Feel free to make it better. Cheers.
